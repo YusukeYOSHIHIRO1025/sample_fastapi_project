@@ -1,1 +1,3 @@
 # sample_fastapi_project
+
+チャットGPTライクなアプリケーションのサーバーのリポジトリです。
