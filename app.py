@@ -72,7 +72,7 @@ async def chat(request: ChatRequest):
                 {"role": "system", "content": "You are a helpful assistant. Use the following context to answer the question."},
                 {"role": "user", "content": f"Context: {relevant_doc}\n\nQuestion: {question}"}
             ],
-            max_tokens=150
+            max_tokens=1000
         )
         answer = response['choices'][0]['message']['content'].strip()
         return {"answer": answer}
